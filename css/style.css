@@ -43,9 +43,9 @@ html {
 	-webkit-text-size-adjust: 100%;
 
 
-	--night-color: #1e1f26;
+	--night-color: #000022;
 	--day-color: #f6f6f6;
-	--night-background: radial-gradient(circle at top left, #1e1f26, #1e1f26);
+	--night-background: radial-gradient(circle at top left, #000022, #000022);
 	--transition-time: 0.5s;
 
 }
@@ -53,7 +53,7 @@ html {
 :root[color-mode="light"]{
 	--surface1: var(--day-color);
 	--surface2: white;
-	--surface3: #FFFFFFCC;
+	--surface3: #FFFFFFCC; /* Surface 3 is the translucent */
 	--element1: var(--night-color);
 	--element2: black;
 	--element3: darkgrey;
@@ -62,7 +62,7 @@ html {
 
 :root[color-mode="dark"]{
 	--surface1: var(--night-color);
-	--surface2: #2D2E39;
+	--surface2: #040F16;
 	--surface3: #000000CC;
 	--element1: var(--day-color);
 	--element2: white;
