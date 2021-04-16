@@ -50,6 +50,8 @@ html {
 
 }
 
+
+
 :root[color-mode="light"]{
 	--surface1: var(--day-color);
 	--surface2: white;
@@ -82,6 +84,7 @@ html {
 	box-sizing: border-box;
 
 }
+
 
 input, textarea {
 
@@ -371,7 +374,7 @@ article[role="pge-title-content"].contact-header p a:hover{color: var(--primary)
 
 .work-header{ border-bottom: 1px solid var(--element3); margin-bottom: 5rem; padding-bottom: 5rem; }
 
-.work-content{ margin: 1rem 0; padding: 1rem 0; }
+.work-content{ margin-bottom: 2rem; padding-bottom: 2rem; }
 
 .work-details,.blog-details{ padding:0 69px; margin-top:73px}
 
@@ -464,8 +467,8 @@ article[role="pge-title-content"].contact-header p a:hover{color: var(--primary)
 /* this is the oval shape */
 .container .switch .slider {
   position: absolute;
-  height: 3rem;
-  width: 5rem;
+  height: 2rem;
+  width: 3.5rem;
   border-radius: 30px;
   background-color: var(--night-color);
   cursor: pointer;
@@ -476,10 +479,10 @@ article[role="pge-title-content"].contact-header p a:hover{color: var(--primary)
 /* this is the circle inside shape */
 .container .switch .slider:before {
   position: absolute;
-  left: 5px;
-  bottom: 5px;
-  height: 2rem;
-  width: 2rem;
+  left: 0.5rem;
+  bottom: 0.35rem;
+  height: 1.3rem;
+  width: 1.3rem;
   content: "";
   border-radius: 50%;
   background-color: var(--day-color);
@@ -495,8 +498,9 @@ article[role="pge-title-content"].contact-header p a:hover{color: var(--primary)
 }
 #toggle:checked ~ .slider:before {
   background-color: var(--day-color);
-  box-shadow: inset -0.8rem -0.5rem 0 0 var(--night-color);
-  transform: translate(2rem, 1px);
+  box-shadow: inset -0.6rem -0.3rem 0 0 var(--night-color);
+  /*transform: translate(1.3rem, 0.08rem);*/
+  transform: translateX(1.3rem);
 }
 #toggle:checked ~ .slide-block {
   left: 0;
@@ -523,4 +527,5 @@ article[role="pge-title-content"].contact-header p a:hover{color: var(--primary)
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
+
 
